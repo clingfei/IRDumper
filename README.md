@@ -15,7 +15,7 @@ make
 ## Usage
 
 ```
-make LLVM=1 KCFLAGS="-flegacy-pass-manager -Xclang -load -Xclang /home/clf/DI-Pass/build/libIRDumper.so -mllvm input=/path/to/filelist" -j ($nproc)
+make LLVM=1 KCFLAGS="-flegacy-pass-manager -Xclang -load -Xclang /path/to/libIRDumper.so -mllvm input=/path/to/filelist" -j ($nproc)
 ```
 
-The files listed in filelist must be **absolute path**.
+The files listed in filelist must be **the relative path to the base dir**.
